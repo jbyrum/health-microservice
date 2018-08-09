@@ -4,4 +4,5 @@ build:
 
 run:
    web: gunicorn --bind 0.0.0.0:$PORT wsgi
+   worker: gunicorn --bind $HEROKU_PRIVATE_IP:1234 wsgi
 
