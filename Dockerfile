@@ -17,8 +17,5 @@ WORKDIR /opt/webapp
 RUN useradd -m myuser
 USER myuser
 
-# Run the app.  CMD is required to run on Heroku
-# $PORT is set by Heroku			
-
-EXPOSE 5001
+# Run the app
 CMD gunicorn --bind 0.0.0.0:$PORT wsgi --reload
