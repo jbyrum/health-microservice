@@ -1,8 +1,10 @@
 #Grab the latest alpine image
-FROM heroku/heroku:16
+#FROM heroku/heroku:16
+FROM python:3.6
+
 
 # Heroku-16 Install python and pip
-RUN apt-get update && apt-get install -y python3-pip
+#RUN apt-get update && apt-get install -y python3-pip
 
 ADD requirements.txt /tmp/requirements.txt
 
