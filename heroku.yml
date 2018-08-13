@@ -7,7 +7,3 @@ run:
       command: 
          - gunicorn --bind 0.0.0.0:$PORT wsgi
       image: web
-   worker: 
-      command: 
-         - gunicorn --bind $HEROKU_PRIVATE_IP:1234 wsgi
-      image: web
