@@ -12,7 +12,7 @@ CORS(app)
 logging.basicConfig(level=logging.DEBUG)
 
 @app.route('/', methods=['POST'])
-def home():
+def getMany():
 	data = request.get_json(force=True)
 	returnData = []
 	
