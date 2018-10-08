@@ -34,3 +34,13 @@ def getOne():
 	    mimetype='application/json'
 	)
 	return response
+
+@app.route('/asdf', methods=['GET'])
+def getOne():
+	response = app.response_class(
+		response="asdf",
+	    status=200,
+	    mimetype='application/json'
+	)
+	return response
+
