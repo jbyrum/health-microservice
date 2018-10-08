@@ -36,7 +36,7 @@ def getOne():
 	return response
 
 @app.route('/asdf', methods=['GET'])
-def getOne():
+def getAsdf():
 	response = app.response_class(
 		response="asdf",
 	    status=200,
